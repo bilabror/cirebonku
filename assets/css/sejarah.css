@@ -1,0 +1,40 @@
+body header {
+
+    background: #132b4f;
+
+}
+.up {
+  margin-top: 80px;
+}
+
+.hero {
+  background: url('../img/sejarah-kota-cirebon.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+.row1 {
+  padding: 0 20px;
+}
+
+.row1 h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 4px;
+    background: #132b4f;
+    border: none;
+    border-radius: 5px;
+}
+.row1 p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: justify;
+}

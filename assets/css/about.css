@@ -1,0 +1,68 @@
+body header {
+    background: #132b4f;
+}
+.up {
+  margin-top: 80px;
+}
+
+.row1 {
+  margin-top: 150px;
+  padding: 0 60px;
+  min-height: 100vh;
+}
+
+.row1 h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.hr {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 4px;
+    background: #132b4f;
+    border: none;
+    border-radius: 5px;
+}
+.row1 p {
+    margin-bottom: 20px;
+    font-family: Hind,sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    text-align: justify;
+
+}
+
+
+.maps {
+    display: flex;
+    justify-content: center;
+}
+.maps .detail-map {
+    margin: 20px;
+    width: 500px;
+}
+.maps .detail-map h3 {
+    margin-top: 30px;
+}
+.maps .detail-map p {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.row4 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.row4 ul {
+    margin-left: 40px;
+}
+.row4 ul li {
+    list-style-type: disc;
+}
+.row4 h2 {
+  text-align: center;
+}
+.row4 p span {
+  font-weight: bold;
+}

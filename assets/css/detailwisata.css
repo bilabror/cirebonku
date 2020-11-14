@@ -1,0 +1,126 @@
+  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+body header {
+    background: #132b4f;
+}
+.up {
+  margin-top: 80px;
+}
+.hr {
+      margin-top: 20px;
+      width: 100px;
+      height: 4px;
+      background: #132b4f;
+      border: none;
+      border-radius: 5px;
+      margin-bottom: 40px;
+  }
+
+.row1,.row2,.row3,.row4 {
+    margin-bottom: 50px;
+}
+
+.row1 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom,rgba(11, 11, 218, 0.2),rgba(11, 11, 218, 0.2)),
+    url('../img/kasepuhan.jpg');
+    /*background-image:
+    linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.3)),
+    url('../img/kasepuhan.jpg');*/
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row1 h1 {
+    color: #eee;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-size: 4rem;
+}
+.row2 {
+    margin:20px 50px;
+}
+.row2 h2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.row2 p {
+    margin-bottom: 20px;font-family: Hind,sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+}
+.row2 ul {
+    margin-left: 40px;
+}
+.row2 ul li {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+.row3 {
+    width: 100%;
+    margin-top: 40px;
+}
+.row3 .galeries {
+    width: 100%;
+    margin: auto 70px;
+}
+.row3 h2 , .row4 h2{
+    text-align: center;
+}
+.row3 .galeries .img {
+    width: 280px;
+    height: 300px;
+    position: relative;
+    margin:5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+    background-image: url('../img/kasepuhan.jpg');
+    transition: .5s;
+    background-size: cover;
+    background-position: center;
+}
+.row3 .galeries .img:hover {
+    opacity: .7;
+    transform: scale(1.01);
+}
+
+
+.row3 .galeries .img1 {
+    background-image: url('../img/kasepuhan.jpg');
+}
+.row3 .galeries .img2 {
+    background-image: url('../img/img2.jpg');
+}
+.row3 .galeries .img3 {
+    background-image: url('../img/kreta-pusaka.jpg');
+}
+.row3 .galeries .img4 {
+    background-image: url('../img/Pusaka-Keraton-Kasepuhan.jpg');
+}
+.maps {
+    display: flex;
+    justify-content: center;
+}
+.maps .detail-map {
+    margin: 20px;
+    width: 500px;
+}
+.maps .detail-map h3 {
+    margin-top: 30px;
+}
+.maps .detail-map p {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.row4 ul {
+    margin-left: 40px;
+}
+.row4 ul li {
+    list-style-type: disc;
+}

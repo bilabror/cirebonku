@@ -1,0 +1,229 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: verdana,arial,sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1500px;
+}
+
+/* ------ Bagian Header ------ */
+
+header {
+	position: fixed;
+	display: flex;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 0 30px;
+	height: 80px;
+	align-items: center;
+	color: white;
+	z-index: 9999;
+	transition:1s;
+}
+header .icon {
+	display: flex;
+	align-items: center;
+}
+header .icon i {
+	color: white;
+	font-size: 30px;
+	margin-right: 10px;
+}
+header.sticky {
+  background: #132b4f;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5), 0 0 0px rgba(0, 0, 0, 0.5) inset;
+}
+
+
+
+
+/* ---------------------- Navigasi ------------------------ */
+nav {
+  transition: 1s;
+}
+nav ul {
+	display: flex;
+}
+nav ul li a {
+	text-decoration: none;
+	padding: 0 20px;
+	font-weight:bold;
+	color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+
+nav ul li a:hover {
+  color:#eee;
+}
+.bars {
+   position: relative;
+   display:none;
+   transition: 1s;
+ }
+ .bars span {
+   display: block;
+   width: 100%;
+   height: 3px;
+   background: #fff;
+   position: absolute;
+   top:50%;
+   vertical-align: middle;
+   margin-top: -2px;
+   border-radius: 100px;
+ }
+
+ .bars:before,.bars:after{
+   content: '';
+   background: #fff;
+   position: absolute;
+   width: 100%;
+   height:3px;
+   border-radius: 100px;
+   left: 0;
+ }
+ .bars:before {
+   top:0;
+   transform-origin: 0 0;
+ }
+ .bars:after {
+   bottom: 0;
+   transform-origin: 0 100%;
+ }
+ nav.show {
+   display:block;
+   left: 40%;
+ }
+ .rotate:before {
+   transform: rotate(45deg);
+ }
+ .rotate:after {
+   transform: rotate(-45deg);
+ }
+ .rotate span {
+   display: none;
+ }
+ 
+ 
+
+ 
+/* -------------------------------- Banner ----------------------------------- */
+
+.banner {
+	background-image:
+	linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.7)),
+	url('../img/cirebon.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	color: white;
+}
+.banner .box-text {
+  position: absolute;
+  top: 50%;
+  left:40%;
+  transform:translate(-50%,-50%);
+}
+.banner .box-text h1 {
+/*font-family: 'Staatliches', cursive;*/
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5rem;
+}
+.banner .box-text p {
+  font-family: 'Lemonada', cursive;
+}
+.banner .box-text a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+    background:rgba(0,0,0,.5);
+    border: 3px solid #fff;
+    margin-top: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .5s;
+ }
+.banner .box-text a:hover{
+    background:#132b4f;
+
+}
+
+footer {
+  width: 100%;
+	background: #333;
+	color: #eee;
+	text-align: center;
+	line-height: 80px;
+	font-size: 1.3rem;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 760px) {
+  .banner .box-text {
+    width: 100%;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    left:50%;
+  }
+  .banner .box-text a {
+    padding: 10px 30px;
+  }
+  .banner .box-text p {
+    padding: 5px 30px;
+    font-size:  .8rem;
+  }
+  .banner .box-text h1{
+    font-size: 1.7rem;
+  }
+  nav {
+    display: none;
+    right: 0;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    background:#132b4f;
+    box-shadow: 0 0 10px #333;
+  }
+
+  nav ul {
+  flex-direction: column;
+  margin-top: 100px;
+  padding: 0 20px;
+  }
+  nav ul li {
+    padding-left: 20px;
+    line-height: 50px;
+    border-bottom: 1px solid white;
+  }
+  nav ul a {
+    font-size: 5vw;
+  }
+  .bars {
+    display: inline-block;
+    width: 35px;
+    height: 25px;
+    cursor: pointer; 
+  }
+  .icon h3 {
+    font-size: 6vw;
+    }
+.clear {
+  clear: both;
+  }
+}
